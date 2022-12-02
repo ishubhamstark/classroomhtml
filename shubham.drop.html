@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: rgb(226, 43, 134);
+        }
+        .flex-container{
+            display: flex;
+        }
+        .left-menu{
+            flex: 20%;
+        }
+        .right-menu{
+            flex: 80%;
+        }
+        nav ul {
+            list-style-type:none;
+            
+        }
+        nav ul li{
+            display: inline;
+            margin-left: 30px;
+   
+        }
+        nav ul li a {
+            font-size: 22px;
+            text-decoration: none;
+            color: rgb(100, 0, 17);
+        }
+        .dropdown  .drop-down-list{
+            position: absolute;
+            /* background-color:darkblue; */
+            width: 100px;
+            left:540px;
+            display: block;
+            box-shadow: rgba(rgb(255, 0, 157), green, blue, alpha);
+            /*z-index:1; */
+            display:none;
+        }
+        .dropdown:hover .drop-down-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>    <div class="flex-container">
+        <div class="left-menu">
+            <h1> LOGO </h1>
+        </div>
+        <div class="right-menu">
+            <ul>
+                <li> <a href="">  HOME </a></li>
+                <li> <a href=""> About </a></li>
+                <li class="dropdown"><a href="">Destination</a>
+                    <div class="drop-down-list">
+                    <a href="">DElhi</a>
+                    <a href="">Nainital</a>
+                    <a href="">MP</a> 
+                    <a href="">UP</a>
+                    <a href="">jharkhand</a>
+                    </ul>
+        </div>
+    </div>
+
+            </li>
+           
+        
+        </nav>
+        </body>
+</html>
